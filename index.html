@@ -1,53 +1,125 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>امیررضا شاهدی | متخصص کامپیوتر</title>
-  <meta name="description" content="سایت شخصی امیررضا شاهدی، متخصص کامپیوتر و فناوری اطلاعات، دارای مدرک ICDL و مهارت‌های دیجیتال.">
-  <meta name="author" content="امیررضا شاهدی">
-  <meta name="robots" content="index, follow">
-  <style>
-    *{box-sizing:border-box} body{margin:0;font-family:Tahoma,Arial,sans-serif;background:#090909;color:#f5f5f5}
-    .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:30px}
-    .card{width:min(1050px,100%);display:grid;grid-template-columns:360px 1fr;gap:40px;align-items:center;
-      background:linear-gradient(145deg,#171717,#0d0d0d);border:1px solid #292929;border-radius:28px;padding:32px;box-shadow:0 25px 80px #000}
-    .photo{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:22px;filter:saturate(.9);border:1px solid #333}
-    .tag{display:inline-block;padding:8px 14px;border:1px solid #555;border-radius:999px;color:#bbb;font-size:14px;margin-bottom:18px}
-    h1{font-size:clamp(34px,6vw,64px);margin:0 0 12px;letter-spacing:-2px}
-    h2{font-size:24px;margin:0 0 22px;color:#d0d0d0}
-    p{line-height:2;color:#bdbdbd;font-size:17px}
-    .skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}
-    .skill{padding:10px 14px;background:#202020;border:1px solid #333;border-radius:12px;color:#ddd}
-    footer{text-align:center;color:#777;padding:25px}
-    @media(max-width:800px){.card{grid-template-columns:1fr;padding:22px}.photo{max-width:420px;margin:auto;display:block}h1{font-size:42px}}
-  </style>
-</head>
-<body>
-  <main class="hero">
-    <section class="card">
-      <div><img class="photo" src="profile.jpg" alt="امیررضا شاهدی"></div>
-      <div>
-        <span class="tag">سایت شخصی</span>
-        <h1>امیررضا شاهدی</h1>
-        <h2>متخصص کامپیوتر و فناوری اطلاعات</h2>
-        <p>
-          امیررضا شاهدی در زمینه کامپیوتر و فناوری فعالیت دارد و به یادگیری و توسعه
-          مهارت‌های دیجیتال علاقه‌مند است. او دارای مدرک <strong>ICDL</strong> بوده و
-          در زمینه کار با نرم‌افزارهای کامپیوتری، مهارت‌های اداری و دیجیتال و فعالیت‌های
-          مرتبط با فناوری اطلاعات تجربه و علاقه دارد.
-        </p>
-        <div class="skills">
-          <span class="skill">💻 کار با کامپیوتر</span>
-          <span class="skill">📄 مهارت‌های ICDL</span>
-          <span class="skill">🎨 ویرایش تصاویر</span>
-          <span class="skill">🎬 تولید محتوای دیجیتال</span>
-          <span class="skill">🌐 طراحی و مدیریت وب‌سایت</span>
-          <span class="skill">📱 شبکه‌های اجتماعی</span>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>© امیررضا شاهدی — تمامی حقوق محفوظ است.</footer>
-</body>
-</html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>امیررضا شاهدی | طراحی سایت، گرافیک و خدمات دیجیتال</title>
+
+<meta name="description" content="امیررضا شاهدی | طراحی سایت، طراحی لوگو، بنر تبلیغاتی، ادیت عکس، تولید محتوا، ویدیو تبلیغاتی و خدمات کامپیوتری.">
+<meta name="author" content="امیررضا شاهدی">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Tahoma,Arial,sans-serif;
+  background:
+    radial-gradient(circle at 15% 10%,rgba(0,119,255,.12),transparent 30%),
+    radial-gradient(circle at 85% 40%,rgba(120,50,255,.10),transparent 30%),
+    #07080d;
+  color:#fff;
+  line-height:1.9;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.container{
+  width:90%;
+  max-width:1150px;
+  margin:auto;
+}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(7,8,13,.85);
+  backdrop-filter:blur(15px);
+  border-bottom:1px solid rgba(255,255,255,.07);
+}
+
+nav{
+  min-height:75px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:bold;
+  background:linear-gradient(90deg,#fff,#65a9ff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.menu{
+  display:flex;
+  gap:20px;
+  list-style:none;
+}
+
+.menu a{
+  color:#bbb;
+  font-size:14px;
+  transition:.3s;
+}
+
+.menu a:hover{
+  color:#5da9ff;
+}
+
+.hero{
+  min-height:90vh;
+  display:flex;
+  align-items:center;
+}
+
+.hero-content{
+  max-width:800px;
+  padding:70px 0;
+}
+
+.badge{
+  display:inline-block;
+  padding:7px 15px;
+  border:1px solid rgba(80,160,255,.35);
+  background:rgba(50,130,255,.08);
+  border-radius:30px;
+  color:#70b5ff;
+  font-size:13px;
+  margin-bottom:22px;
+}
+
+.hero h1{
+  font-size:clamp(38px,7vw,75px);
+  line-height:1.15;
+  margin-bottom:20px;
+}
+
+.hero h1 span{
+  background:linear-gradient(90deg,#fff,#55a8ff,#9b72ff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+  color:#aaa;
+  font-size:18px;
+  max-width:700px;
+  margin-bottom:30px;
+}
+
+.buttons{
+  display:flex;
+  gap:13px;
+  flex-wrap
