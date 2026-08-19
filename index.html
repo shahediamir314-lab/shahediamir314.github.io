@@ -9,6 +9,48 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- خوش‌آمدگویی کوچک -->
+<div class="amir-welcome">
+  <div class="alien">👽</div>
+  <div class="laptop">💻</div>
+  <span>خوش اومدی به سایت امیررضا شاهدی</span>
+</div>
+
+<style>
+.amir-welcome {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  padding: 4px 8px;
+  background: #080808;
+  border: 1px solid #d4af37;
+  border-radius: 16px;
+
+  color: #d4af37;
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+
+  box-shadow: 0 0 7px rgba(212,175,55,.4);
+  z-index: 999;
+}
+
+.amir-welcome .alien {
+  font-size: 18px;
+}
+
+.amir-welcome .laptop {
+  font-size: 14px;
+}
+
+.amir-welcome span {
+  white-space: nowrap;
+}
+</style>
   <div class="cursor-glow"></div>
   <div class="particles"></div>
 
@@ -149,32 +191,6 @@
   </footer>
 
   <script src="script.js"></script>
-<!-- ادم فضایی کوچک کنار متن -->
-<div class="space-welcome">
-  <span class="alien">👽</span>
-  <span>به سایت امیررضا شاهدی خوش اومدی 🚀</span>
-</div>
 
-<style>
-.space-welcome {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 5px 9px;
-  margin: 5px;
-  border: 1px solid #00eaff;
-  border-radius: 20px;
-  background: rgba(0, 0, 0, 0.45);
-  color: #00eaff;
-  font-size: 11px;
-  box-shadow: 0 0 8px rgba(0, 234, 255, 0.4);
-  vertical-align: middle;
-}
-
-.space-welcome .alien {
-  font-size: 18px;
-  line-height: 1;
-}
-</style>
 </body>
 </html>
